@@ -1,0 +1,6 @@
+1. Write an SML function that picks only the first elements of a list that picks only the first element of a list that satisfies a given predicate (i.e., funciton that returns boolean).
+Example:
+myFind (fn x >= x > 0.0) [~1.2, ~3.4, 5.6, 7.8]
+val it = 5.6 : real
+
+2. We can generalize the notion of recursion over lists as follows: all recursions have a base case, an iterative case, and a way of combining results. Write an SML function that given the combination function and the base case returns the recursion over lists.

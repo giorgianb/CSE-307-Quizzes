@@ -37,4 +37,4 @@ single_product e (x:xs) = [e, x]:single_product e xs
 
 powerset l = powerset_accumulator [] l
 powerset_accumulator s [] = [s]
-powerset_accumulator s (x:xs) = (powerset_accumulator (x:s) xs) ++ (powerset_accumulator s xs)
+powerset_accumulator s (x:xs) = powerset_accumulator (x:s) xs ++ powerset_accumulator s xs
