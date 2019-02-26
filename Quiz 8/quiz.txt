@@ -1,0 +1,4 @@
+1. Show the NFA that results from the regular expression:
+letter ( letter | digit )*
+
+2. Create an equivalent DFA.
