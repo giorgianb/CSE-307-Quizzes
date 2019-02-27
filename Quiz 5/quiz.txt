@@ -1,0 +1,1 @@
+1. Write SML functions to compute the set operations: member, union, intersection, subset, equal, minus, Cartesian product and powerset for sets represented as lists.
