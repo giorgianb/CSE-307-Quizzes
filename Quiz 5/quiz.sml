@@ -26,12 +26,10 @@ fun minus(L, []) = L
 fun product(L, []) = []
   | product([], L) = []
   | product(X::XS, L) = single_product(X, L) @ product(XS, L)
-and
-  single_product(E, []) = []
+and single_product(E, []) = []
   | single_product(E, X::XS) = [E, X]::single_product(E, XS);
 
 fun powerset(L) = powerset_accumulator([], L)
-and
-  powerset_accumulator(S, []) = [S]
+and powerset_accumulator(S, []) = [S]
   | powerset_accumulator(S, X::XS) = 
       powerset_accumulator(X::S, XS) @ powerset_accumulator(S, XS);
