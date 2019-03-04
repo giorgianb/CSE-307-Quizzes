@@ -1,0 +1,22 @@
+Write the following programs in SML.
+1. Find the last element of a list. if the list is empty, then return 0. For example, last [1,2,3,4,5] returns 5.
+
+2. Find the K'th element of a list where we start with index 0 for the first element. If there is no K'th element, then we return 0. For example kth ([1,2,3,4,5],3); returns 4.
+
+3. Reverse a list.
+
+4. Find out whether a list is a palindrome (i.e., a string reads the same backward as forward, e.g. [r,a,c,e,c,a,r[). For example palindrome ["r","a","c","e","c","a","r"]; return true.
+
+5. Flatten a nested list structure. Transform a list, possible holding lists as elements into a 'flat' list by replacing each list with its elements (recursively). For example: flat [[1,2],[3,4]]; returns [1,2,3,4];
+
+6. Eliminate consecutive duplicants of list elements. If a list contains repeated consecutive elements they should be replaced by a single copy of the element. The order of the elements should not be changed. For example: compress [a,a,a,a,b,c,c,a,a,d,e,e,e,e]; returns [a,b,c,a,d,e].
+
+7. Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in seperate sublists. For example: pack [a,a,a,a,b,c,c,a,a,d,e,e,e,e]; returns [[a,a,a], [b], [c,c], [a,a], [d], [e,e,e,e]].
+
+8. Run-length encoding of list. Consecutive duplicates of elements are encoded as tuples (N,E) where N is the number of duplicates of the element E. For example: encode [a,a,a,a,a,b,c,c,a,a,d,e,e,e,e]; returns [(4,a),(1,b),(2,a),(1,d),(4,e)].
+
+9. Decode a run-length encoded list. Given a run-length code list like [(4,a),(1,b),(2,a),(1,d),(4,e)], construct its uncompressed version [a,a,a,a,a,b,c,c,a,a,d,e,e,e,e].
+
+10. Create a list containing all integers within a given range. For example: range(4,9); returns [4,5,6,7,8,9].
+
+
