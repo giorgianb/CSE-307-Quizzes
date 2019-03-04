@@ -1,0 +1,1 @@
+1. Write a GCD program in Javascript, python, a functional and a logic programming language.
