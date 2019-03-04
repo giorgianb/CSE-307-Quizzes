@@ -1,7 +1,7 @@
 Write the following programs in SML.
 1. Find the last element of a list. if the list is empty, then return 0. For example, last [1,2,3,4,5] returns 5.
 
-2. Find the K'th element of a list where we start with index 0 for the first element. If there is no K'th element, then we return 0. For example kth ([1,2,3,4,5],3); returns 4.
+2. Find the K'th element of a list where we start with index 0 for the first element. If there is no K'th element, then we return 0. For example kth [1,2,3,4,5] 3; returns 4.
 
 3. Reverse a list.
 
