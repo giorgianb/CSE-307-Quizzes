@@ -1,0 +1,28 @@
+1. Transform the following programs from loops and conditional statements to list comprehensions:
+
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = []
+for n in numbers:
+	doubled_numbers.append(n *2)
+
+numbers = [1, 2, 3, 4, 5]
+doubled_odds = []
+for n in numbers:
+	if n % 2 == 1:
+		doubled_odds.append(n * 2)
+
+matrix = [[1,2,3],[4,5,6]]
+flattened = []
+for row in matrix:
+	for n in row:
+		flattened.append(n)
+
+words = {'apple', 'orange', 'pear', 'banana'}
+first_letteres = set()
+for w in words:
+	first_letters.add(w[0])
+
+tel = {'paul':9820, 'leo':9821}
+flipped = {}
+for key, value in tel.items():
+	flipped[value] = key
