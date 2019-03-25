@@ -1,0 +1,7 @@
+1. Basic results from automata theory tell us that the language L = a^nb^nc^n (e.g., abc, aabbcc, aaabbbccc) is not context free. It can be captured, however, using an attribute grammer. Given an underlying CFG and a set of attribute rules that associate a Boolean attribute ok with the root R of each parse tree, such that R.ok=true if and only if the string corresponding to the tree is in L. Write an annotated parse tree for the string "aabbcc".
+
+2. How would you write an S-attribute grammer with a language that supports lists from the top-down CFG for subtraction:
+	expr -> const expor_tail
+	expr_tail -> - const expr_tail
+	expr_tail -> epsilon
+The grammer accumulates the value of the overall expression into the root of the tree. You will need to use lists (dynamic memory allocation) so that individual attributes can hold an arbitrary amount of information. Write an annotated parse tree for the string "1 - 2 - 3 - 4"
