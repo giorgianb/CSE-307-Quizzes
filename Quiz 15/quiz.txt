@@ -1,0 +1,47 @@
+1. The binding time in C of:
+a. The number of built-in functions (standard library, math, type queries, sizeof, printf, malloc, assert, etc.) is bound:
+
+b. The variable declaration that corresponds to a particular variable reference is bound at:
+
+c. The maximum length allowed for a constant (literal) character string (if there is a limit) is bound at:
+
+d. The address of a particular library routine is bound by:
+
+e. The total amount of space occupied by program code and data is bound at:
+
+2. Give an example of when a variable may be live but not in scope:
+
+3. Consider the following Psuedocode:
+procedure P(A, B : real)
+	X : real
+	procedure Q(B, C : real)
+		Y : real
+		...
+	procedure R(A, C : real)
+		Z : real
+		- (*)
+
+What is the referencing enviroment at the location marked by (*) with static scope?
+
+4. Consider the following program:
+
+var total = 0
+def a():
+	total += 1
+def b(F):
+	var total = 0
+	F()
+	print "B", total
+def c():
+	var total = 0
+	b(a)
+	print "C", total
+c()
+print "T", total
+
+What is the output with:
+- Static Scoping:
+
+- Dynamic Scoping with Shallow Binding:
+
+- Dynamic Scoping with Deep Binding:
